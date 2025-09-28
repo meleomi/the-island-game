@@ -30,7 +30,17 @@ label start:
     #Text "they all believe you"
     scene
     #show the poster I made with all the characters
-    scene
+    #and then just keep going im just gonna make the menu whick is when the player can chhose
+    "choose which person you want to kill":
+        menu:
+            "Oliver":
+                jump kill oliver
+            "Harper":
+                jump kill harper
+            "James":
+                jump kill james
+            "yourself":
+                jump kill yourself
     show eileen happy
 
     # These display lines of dialogue.
