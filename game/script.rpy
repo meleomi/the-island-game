@@ -25,9 +25,11 @@ return items
 
 label start:
     #play backgrounf music
-    play music "" loop
+    play music "sad-documentary-background-music-365827.mp3" loop
     # Show the first ocean background.
     scene bg ocean
+    #thunder sound effect
+    play sound ""
     # Show the text "The storm came...".
     scene bg inform text 1 with fade
     # Show the bg that people start going on the island
