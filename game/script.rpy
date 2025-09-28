@@ -24,7 +24,8 @@ return items
 # The game starts here.
 
 label start:
-
+    #play backgrounf music
+    play music "" loop
     # Show the first ocean background.
     scene bg ocean
     # Show the text "The storm came...".
@@ -51,20 +52,14 @@ python:
 day = len(survivors) 
 if day == 2:
 renpy.jump#jump to the scene where survive is here
-
-# flavour text
-scene bg inform with fade
-"Day [day] – we are running out of food."
-scene bg poster with fade
-"Choose who dies today."
-
+#ok now this here is like all the provious dialogeslike im cold blahblah and we are out of foof we have to kill someone
 # build & show menu (only survivors)
 call screen kill_menu_screen
 # after jump the chosen name is removed inside the target label
 jump day_loop # next day
 
 
-# --- 4) one screen for all days ----------
+# --- 4) one screen for all days ----------(you might need to adjust this)
 screen kill_menu_screen():
 tag menu
 modal True
