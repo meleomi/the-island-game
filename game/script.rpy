@@ -4,6 +4,7 @@ Plug 'wakatime/vim-wakatime'
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
+
 define capitan = Character("Mr. Gagnon")
 define girl = Character("Ava")
 define mom = Character("Harper")
