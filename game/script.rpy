@@ -49,8 +49,8 @@ label start:
 label day_loop:
 python:
 day = len(survivors) 
-if day == 0:
-renpy.jump("game_over")
+if day == 2:
+renpy.jump#jump to the scene where survive is here
 
 # flavour text
 scene bg inform with fade
