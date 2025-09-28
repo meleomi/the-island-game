@@ -34,13 +34,13 @@ label start:
     "choose which person you want to kill":
         menu:
             "Oliver":
-                jump kill oliver
+                jump #corresponding text
             "Harper":
-                jump kill harper
+                jump #corresponding text
             "James":
-                jump kill james
+                jump #corresponding text
             "yourself":
-                jump kill yourself
+                jump #corresponding text
     show eileen happy
 
     # These display lines of dialogue.
