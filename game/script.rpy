@@ -25,6 +25,11 @@ label start:
     scene bg inform with text 2 with fade
     #Text "the first day"
     scene 
+    #Text "We are running out of food"
+    scene
+    #Text they all believe you
+    scene
+    #
     show eileen happy
 
     # These display lines of dialogue.
