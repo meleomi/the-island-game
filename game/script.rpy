@@ -11,21 +11,20 @@ define mom = Character("Harper")
 define grandpa = Character("Lames")
 define guy = Character("Oliver")
 
-
 # The game starts here.
 
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
-    scene bg room
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
+    # Show the first ocean background.
+    scene bg ocean
+    # Show the text "The storm came...".
+    scene bg inform text 1 with fade
+    # Show the bg that people start going on the island
+    scene bg island with fade
+    #Text "all we have..."
+    scene bg inform with text 2 with fade
+    #Text "the first day"
+    scene 
     show eileen happy
 
     # These display lines of dialogue.
