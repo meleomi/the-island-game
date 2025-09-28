@@ -38,8 +38,21 @@ label start:
     you "I believed I had mastered the sea, that nothing could stand on the way. But when the storm came, our ship cracked apart under its rage."
 
 
-    # Show the bg that people start going on the island
+    # Island scene
     scene bg island_p with fade
+    show you_sp at left:
+        zoom 0.5
+    you "Five of us reached the island, but we brought almost nothing with us. We don’t have much food, and what little we saved is running out. We made a fire to stay warm. There is no signal,but we keep trying, holding it up and hoping it will connect soon and we will be saved."
+    hide you_sp
+    show girl_sp at right:
+        zoom 0.5
+    girl "Mom... i want to go home..."
+    show mother_sp at left:
+        zoom 0.5
+    mom "I know... We just need stay here for a little bit, until we will bw rescuered"
+    girl "I’m cold..."
+    mom "I know. Stay close to the fire, it will keep you warm"
+    pause
     #Text "all we have..."
     #Text "the first day"
     scene 
@@ -48,11 +61,6 @@ label start:
     #Text "they all believe you"
     scene
     #show the poster I made with all the characters
-    scene
-  
-
-    # These display lines of dialogue.
-
 
     # This ends the game.
 
