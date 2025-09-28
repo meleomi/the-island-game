@@ -2,9 +2,9 @@
 Plug 'wakatime/vim-wakatime'
 
 # Declare characters used by this game. The color argument colorizes the
-# name of the character.
+# name of the character. set colour
 
-define e = Character("Eileen")
+define c = Character("Captain Gagnon (You)", color = "#1366D8")
 
 
 # The game starts here.
