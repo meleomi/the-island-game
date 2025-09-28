@@ -27,9 +27,10 @@ label start:
     scene 
     #Text "We are running out of food"
     scene
-    #Text they all believe you
+    #Text "they all believe you"
     scene
-    #
+    #show the poster I made with all the characters
+    scene
     show eileen happy
 
     # These display lines of dialogue.
