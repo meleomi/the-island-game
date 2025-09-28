@@ -10,7 +10,17 @@ define girl = Character("Ava")
 define mom = Character("Harper")
 define grandpa = Character("Lames")
 define guy = Character("Oliver")
+# --- 1) who is alive at the start ? ---
+define survivors = ["Oliver", "Harper", "James", "Ava", "Yourself"]
 
+# --- 2) quick helper ----------
+init python:
+def build_kill_menu():
+# return a Ren'Py menu list [ (label, jump_target), … ]
+items = []
+for name in survivors:
+items.append((name, "day_kill_" + name.lower()))
+return items
 # The game starts here.
 
 label start:
@@ -32,27 +42,10 @@ label start:
     #show the poster I made with all the characters
     #and then just keep going im just gonna make the menu whick is when the player can chhose
     #the first day
-    # ==========================
-# ISLAND KILL-SIM (template)
-# ==========================
+   
 
-# --- 1) who is alive at the start ? ---
-define survivors = ["Oliver", "Harper", "James", "Ava", "Yourself"]
 
-# --- 2) quick helper ----------
-init python:
-def build_kill_menu():
-# return a Ren'Py menu list [ (label, jump_target), … ]
-items = []
-for name in survivors:
-items.append((name, "day_kill_" + name.lower()))
-return items
-
-# --- 3) generic day label ----------
-label start:
-scene bg island with fade
-"We land on the island…"
-
+#I don't know if this works
 label day_loop:
 python:
 day = len(survivors) 
